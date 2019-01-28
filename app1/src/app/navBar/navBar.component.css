@@ -1,0 +1,29 @@
+*{
+  font-family: "Courier New";
+}
+.menu__bar{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 960px;
+  height: 60px;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+
+.menu__bar__links{
+  display: flex;
+  flex-direction: row;
+  float: left;
+  margin-left : 600px;
+}
+.menu__bar__links > [class*='link']  {
+  list-style: none;
+  margin: 0 10px;
+}
+.menu__bar__links > [class*='link'] a {
+  text-decoration: none;
+  color: #3a3a3a;
+}

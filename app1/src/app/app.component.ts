@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import construct = Reflect.construct;
 
 @Component({
   selector: 'app-root',
@@ -6,10 +7,27 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'aqui seria minha model';
-  dados = {
-    nome : 'fernando',
-    idade : 29
+  private data_nascimento : number ;
+  private valor : number ;
+  private title: string = 'aqui seria minha model';
+  private dados: object = {
+    nome : 'Fernando',
+  };
+
+  constructor(){
+    this.valor = setTimeout(
+      ()=>{
+         this.valor = this.idadeAtual( parseInt( prompt('digite a sua data de nascimento')));
+      },
+      3000
+    )
+
   }
+
+  public idadeAtual(data : number) : number{
+    let ano = new Date().getFullYear();
+    return parseInt(ano)  - data ;
+  }
+
 }
 
