@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
     styleUrls : ['./navBar.component.css']
   }
 )
-export class NavBar {}
+export class NavBar {
+  private links : { perfil : string , contato : string , git : string } =
+    {
+      perfil : 'http://jackoest.com/',
+      contato : 'http://jackoest.com/#Contatos',
+      git : 'https://github.com/wxcorporations'
+    }
+}

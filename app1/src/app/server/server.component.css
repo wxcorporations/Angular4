@@ -1,6 +1,35 @@
-.panel{
+.panel {
   background-color: lightgray;
 }
+.panel__nameServe {
+  padding: 10px 0 30px 0;
+}
+
 h1 {
-  color: darkgreen;
+  padding-top: 50px;
+  color: #3a3a3a;
+}
+
+input {
+  margin: 5px;
+  width: 200px;
+  height: 20px;
+  border: none;
+  padding: 5px;
+  border-radius: 8px;
+}
+
+button {
+  position: relative;
+  margin: 10px;
+  width: 150px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: #77bd1c;
+  color: white;
+}
+
+button:disabled {
+  background-color: #929292;
+  color: rgba(0,0,0,0.72);
 }

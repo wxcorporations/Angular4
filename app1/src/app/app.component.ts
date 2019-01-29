@@ -7,27 +7,9 @@ import construct = Reflect.construct;
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  private data_nascimento : number ;
-  private valor : number ;
-  private title: string = 'aqui seria minha model';
-  private dados: object = {
+  private dados: { nome : string , idade : number } = {
     nome : 'Fernando',
+    idade : 29
   };
-
-  constructor(){
-    this.valor = setTimeout(
-      ()=>{
-         this.valor = this.idadeAtual( parseInt( prompt('digite a sua data de nascimento')));
-      },
-      3000
-    )
-
-  }
-
-  public idadeAtual(data : number) : number{
-    let ano = new Date().getFullYear();
-    return parseInt(ano)  - data ;
-  }
-
 }
 
