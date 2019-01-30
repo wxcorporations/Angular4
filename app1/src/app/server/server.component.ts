@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {randomBytes} from "crypto";
 
 @Component({
   selector : 'app-server',
@@ -7,19 +8,22 @@ import { Component } from '@angular/core';
 })
 export class ServerComponent
 {
-  private serverCreationStatus : string = 'No server was created!';
-  private serverName : string = '';
-  private desactive : boolean = true;
-  private serverCreated : boolean = false;
+  private dataButton : { title : string , class : string } = {
+    title : 'on' ,
+    class : 'active'
+  }
 
-  onCreateServer()
-  {
-    this.serverCreationStatus =` Serve name:  ${this.serverName}`;
-    this.serverCreated = true ;
+  private dataServer : { nome : string , id : number } = {
+    nome: 'Servidor : nome_servidor',
+    id : this.gerarID()
+  };
+
+  private gerarID(){
+    return Math.floor(Math.random() * 100 ) ;
   }
-  public updateServer(event: Event) : void
-  {
-    this.serverName = (<HTMLInputElement>event.target).value;
-    this.desactive = this.serverName ? false : true ;
+
+  private setName( nome : string ) : void {
+    this.dataServer.nome = nome ;
   }
+
 }

@@ -1,5 +1,70 @@
-<app-server></app-server>
-<app-server></app-server>
-<app-server></app-server>
-<app-server></app-server>
-<app-server></app-server>
+
+
+<div class="panel">
+  <h1>
+    Server Name
+  </h1>
+
+  <br>
+
+  <input
+    type="text"
+    class="form-control"
+    bindon-ngModel="serverName"
+    (input)="updateServer($event)"
+    [autofocus]="true"
+  >
+  <p>
+    {{ serverName }}
+  </p>
+
+  <!-- ======================================================
+    EVENT BIND :  (click)='nomeMetodo()'.
+    PROPERT BIND : [nome_propriedade_tag]="valor"   valor pode ser um porp. do component.
+  ====================================================== -->
+  <button
+    (click)="onCreateServer()"
+    [disabled]="desactive"
+  >
+    add server
+  </button>
+
+  <div [ngClass]="getClassServer">
+    <app-server *ngFor=" let server of listServer "></app-server>
+  </div>
+
+  <!-- ======================================================
+
+    DIRETIVA *NGIF FAZ UMA VERIFICACAO NA PROP SERVERCREATED CASO SEJA
+    VERDADEIRO EXIBE CONTEUDO SE NAO ELA NAO E RENDERIZADA
+
+    sintaxe  *ngIf=" condicao_boleana ; else referencia "
+
+    DIRETIVA [ ngIf ] PERMITE RECEBER O SIMBOLO DE EXCLAMACAO [ ! ] OQUE
+    INVERTE TIPO DE VERIFICAO OQUE ERA VERDADEIRO TEM QUE SER FALSO PRA
+    SER EXIBIDO.
+    ====================================================== -->
+  <p class="panel__nameServe"
+     *ngIf="!serverCreated"
+  >
+    Nenhum server criado utilizando simbolo [ ! ]
+  </p>
+
+  <p
+    [ngClass]="{ online : onServer === true }"
+  >
+    servido offiline
+  </p>
+
+  <!-- ======================================================
+  MELHOR FORMA DE RENDERIZAR CONCIONALMENTE COM TEMPLATE DEFAULT
+  E UTILIZANDO NG-TEMPLATE E O #NOME_REFERENCIA
+  ====================================================== -->
+  <ng-template #noServe >
+    <p class="panel__nameServe" >
+      Nenhum server criado utilizando ng-template!
+    </p>
+  </ng-template>
+
+
+</div>
