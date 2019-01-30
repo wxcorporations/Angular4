@@ -1,0 +1,15 @@
+<nav class="menu">
+
+  <div class="menu__branding">
+    <img src="{{dataNav.src}}" alt="{{dataNav.alt}}">
+  </div>
+
+  <h1 class="menu__title"> {{title}} </h1>
+
+  <ul class="links">
+    <li *ngFor="let link of links">
+      <a href=""> {{link}} </a>
+    </li>
+  </ul>
+
+</nav>

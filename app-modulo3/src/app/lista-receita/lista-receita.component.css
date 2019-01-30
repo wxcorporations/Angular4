@@ -1,0 +1,35 @@
+.section__receitas{
+  position: relative;
+  width: 960px;
+  margin: 0 auto;
+  padding: 40px 0;
+}
+.section__receitas  app-btn-add {
+  position: relative;
+  display: block;
+  margin: 15px 0;
+}
+
+.section__receitas__container{
+  display: flex;
+  flex-direction: row ;
+}
+
+.section__receitas__action{
+  display: inline;
+  width: 100%;
+
+}
+
+
+.section__receitas__itens app-receita{
+  position: relative;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.section__receitas__itens{
+  position: relative;
+  display: block;
+  margin-right: 10px;
+}

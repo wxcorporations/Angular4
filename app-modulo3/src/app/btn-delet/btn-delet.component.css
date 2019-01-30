@@ -1,0 +1,17 @@
+.btnDelet{
+  width: 100px;
+  height: 30px;
+  border-radius: 5px;
+  background-color: #ca1113;
+  color: white;
+  -webkit-box-shadow: -1px 10px 13px -5px rgba(0,0,0,0.22);
+  -moz-box-shadow: -1px 10px 13px -5px rgba(0,0,0,0.22);
+  box-shadow: -1px 10px 13px -5px rgba(0,0,0,0.22);
+  transition: 200ms box-shadow ;
+  outline: none ;
+}
+
+.btnDelet:hover{
+  background-color: #e11113;
+  box-shadow: none ;
+}

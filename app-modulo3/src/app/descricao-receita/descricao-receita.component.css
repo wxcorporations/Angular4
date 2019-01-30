@@ -1,0 +1,30 @@
+.descricaoReceita{
+  position: relative;
+  width: 500px;
+  height: 400px;
+  overflow: auto;
+  border: 0.15em solid #eee;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.descricaoReceita > h1 {
+  color: #6d6d6d;
+  margin-bottom: 20px;
+}
+.descricaoReceita > label {
+  position: relative;
+  display: inline-block;
+  font-weight: 800 ;
+  color: #6d6d6d;
+
+}
+
+.descricaoReceita p {
+  font-weight: 300 ;
+  font-size: 16px;
+  color: #515151;
+  padding: 15px 0;
+}
+
+
