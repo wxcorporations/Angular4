@@ -1,9 +1,9 @@
-.btnAdd{
-  position: relative;
+.btnClear{
   width: 100px;
   height: 30px;
+  border: none ;
   border-radius: 5px;
-  background-color: #1c941c;
+  background-color: #3b93ff;
   color: white;
   -webkit-box-shadow: -1px 10px 13px -5px rgba(0,0,0,0.22);
   -moz-box-shadow: -1px 10px 13px -5px rgba(0,0,0,0.22);
@@ -12,7 +12,8 @@
   outline: none ;
 }
 
-.btnAdd:hover{
-  background-color: #31b831;
+.btnClear:hover{
+  background-color: #32a6ff;
+
   box-shadow: none ;
 }

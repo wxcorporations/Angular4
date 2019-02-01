@@ -19,7 +19,6 @@ export class NavBarComponent implements OnInit {
     title : 'List Rescipes' ,
     alt : 'icon' ,
     src : 'https://lh3.googleusercontent.com/UpmmjPNoMp6Rcj5HN4FcGKveMiVMVLVzUyv-daNCaQ8oDA2_HfEvwo0h6yJv-rM0Cg=s100-rw'
-
   }
 
   private links : string[] = [

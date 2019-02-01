@@ -1,8 +1,9 @@
-.btnClear{
+.btnDelet{
   width: 100px;
   height: 30px;
+  border: none ;
   border-radius: 5px;
-  background-color: #3b93ff;
+  background-color: #ca1113;
   color: white;
   -webkit-box-shadow: -1px 10px 13px -5px rgba(0,0,0,0.22);
   -moz-box-shadow: -1px 10px 13px -5px rgba(0,0,0,0.22);
@@ -11,8 +12,7 @@
   outline: none ;
 }
 
-.btnClear:hover{
-  background-color: #32a6ff;
-
+.btnDelet:hover{
+  background-color: #e11113;
   box-shadow: none ;
 }

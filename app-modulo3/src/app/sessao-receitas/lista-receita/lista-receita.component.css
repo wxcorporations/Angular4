@@ -18,9 +18,7 @@
 .section__receitas__action{
   display: inline;
   width: 100%;
-
 }
-
 
 .section__receitas__itens app-receita{
   position: relative;
@@ -32,4 +30,5 @@
   position: relative;
   display: block;
   margin-right: 10px;
+  min-width: 569px;
 }

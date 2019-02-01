@@ -1,14 +1,11 @@
 <section class="section__compra">
 
-  <app-painel-menu-compra></app-painel-menu-compra>
+  <app-painel-menu-compra [listaItens]="lista"></app-painel-menu-compra>
 
   <div class="section__compra__lista">
     <label for=""></label>
     <ul>
-      <li>item 1</li>
-      <li>item 1</li>
-      <li>item 1</li>
-      <li>item 1</li>
+      <li *ngFor="let item of lista"> {{ item }} </li>
     </ul>
   </div>
 </section>

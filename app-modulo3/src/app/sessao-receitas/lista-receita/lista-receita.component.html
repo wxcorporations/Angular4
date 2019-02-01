@@ -1,0 +1,21 @@
+<section class="section__receitas">
+
+  <app-btn-add (click)="addReceita()"></app-btn-add>
+
+  <div class="section__receitas__container">
+
+    <div class="section__receitas__itens" >
+      <receita
+        *ngFor="let receita of listaReceita"
+        [receita]="receita"
+        (click)="exibirDescricao( receita )"
+      >
+      </receita>
+    </div>
+
+    <div class="section__receitas__descricao">
+      <app-descricao-receita [dadosReceita]="dataDescricao"></app-descricao-receita>
+    </div>
+
+  </div>
+</section>

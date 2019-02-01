@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-sessao-compra',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sessao-compra.component.css']
 })
 export class SessaoCompraComponent implements OnInit {
+
+  public lista : any = [] ;
 
   constructor() { }
 

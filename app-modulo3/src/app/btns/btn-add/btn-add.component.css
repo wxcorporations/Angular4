@@ -1,8 +1,10 @@
-.btnDelet{
+.btnAdd{
+  position: relative;
   width: 100px;
   height: 30px;
   border-radius: 5px;
-  background-color: #ca1113;
+  border: none ;
+  background-color: #1c941c;
   color: white;
   -webkit-box-shadow: -1px 10px 13px -5px rgba(0,0,0,0.22);
   -moz-box-shadow: -1px 10px 13px -5px rgba(0,0,0,0.22);
@@ -11,7 +13,7 @@
   outline: none ;
 }
 
-.btnDelet:hover{
-  background-color: #e11113;
+.btnAdd:hover{
+  background-color: #31b831;
   box-shadow: none ;
 }
