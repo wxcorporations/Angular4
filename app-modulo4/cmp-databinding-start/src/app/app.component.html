@@ -1,0 +1,15 @@
+<div class="container">
+  <cockpit (sentData)="addServer($event)" > </cockpit>
+  <hr>
+  <div class="row">
+    <div class="col-xs-12">
+
+      <server-elements
+        *ngFor="let serverElement of serverElements"
+        [element]="serverElement"
+      ></server-elements>
+
+    </div>
+  </div>
+
+</div>
